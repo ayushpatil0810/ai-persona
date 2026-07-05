@@ -32,9 +32,9 @@ export async function POST(request: Request) {
                   image_url: { url: img },
                 })),
               ],
-            };
+            } as any;
           }
-          return { role: m.role, content: m.content };
+          return { role: m.role, content: m.content } as any;
         }),
       ],
     });
